@@ -32,7 +32,7 @@ export default function SignIn() {
             className="w-full rounded-2xl"
           />
         </div>
-        <div className="w-full md:w-[67%] lg:w-[40%]">
+        <div className="w-full md:w-[67%] lg:w-[40%] ml-10">
           <form>
             <input
               className="mb-6 w-full px-4 py-2 text-xl text-gray-700  bg-white border-gray-300 rounded transition ease-in-out"

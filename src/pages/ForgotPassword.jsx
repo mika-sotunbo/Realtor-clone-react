@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import OAuth from "../components/OAuth";
-export default function ForogotPassword() {
+export default function ForgotPassword() {
   const [email, setEmail] = useState("");
   function onChange(e) {
     setEmail(e.target.value);
@@ -13,7 +13,7 @@ export default function ForogotPassword() {
         className="text-3xl text-center
      mt-6 font-bold"
       >
-        Forogot Password
+        Forgot Password
       </h1>
       <div className="flex justify-center flex-wrap items center px-6 py-12 max-w-6xl">
         <div className="md:w-[67%] lg:w-[50%] mb-12 md:mb-6">
@@ -23,7 +23,7 @@ export default function ForogotPassword() {
             className="w-full rounded-2xl"
           />
         </div>
-        <div className="w-full md:w-[67%] lg:w-[40%]">
+        <div className="w-full ml-10  md:w-[67%] lg:w-[40%]">
           <form>
             <input
               className="mb-6 w-full px-4 py-2 text-xl text-gray-700  bg-white border-gray-300 rounded transition ease-in-out"
