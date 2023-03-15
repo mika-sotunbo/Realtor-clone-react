@@ -8,14 +8,14 @@ export default function ForgotPassword() {
   function onChange(e) {
     setEmail(e.target.value);
   }
-  async function onSubmit(e){
-    e.preventDefault()
+  async function onSubmit(e) {
+    e.preventDefault();
     try {
-      const auth= getAuth()
-      await sendPasswordResetEmail(auth, email)
-      toast.success("Email was sent ")
+      const auth = getAuth();
+      await sendPasswordResetEmail(auth, email);
+      toast.success("Email was sent ");
     } catch (error) {
-      toast.error("Could not send reset password")
+      toast.error("Could not send reset password");
     }
   }
 
